@@ -28,6 +28,7 @@ export default function WordCard(props){
             if(guess == state.word){
                 console.log('yeah!')
                 setState({...state, completed: true})
+                window.location.reload();
             }else{
                 console.log('reset, next attempt')
                 setState({...state,guess:'',attempt: state.attempt + 1})
@@ -35,6 +36,8 @@ export default function WordCard(props){
         }
         
     }
+    
+    
     return(
         <div>
             {
@@ -42,5 +45,6 @@ export default function WordCard(props){
                     <CharacterCard value={c} key={i} activationHandler = {activationHandler} attempt={state.attempt}/>)
             }
         </div>
-    )
+        )
+    
 }

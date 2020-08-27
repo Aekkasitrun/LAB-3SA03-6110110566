@@ -10,5 +10,12 @@
  
 .activeCard{
   color: red;
-  background: pink;
+  background: #fddb3a;
 }
+
+body {
+  background-color: #41444b;
+  color: #fddb3a;
+  text-align: center;
+}
+
