@@ -23,8 +23,8 @@ export default class WordCard extends Component{
         let guess = "" + this.state.guess + c
         if(this.state.attempt < 2){ 
             this.setState({guess})
-            if(guess.length === this.state.chars.length){
-                if(guess === this.state.word){
+            if(guess.length == this.state.chars.length){
+                if(guess == this.state.word){
                 this.setState({guess: "", complete: true})
                 }
                 else{
