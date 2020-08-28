@@ -6,23 +6,21 @@ import WordCard from './WordCard';
 const word = "Friend";
 function App() {
   
+  const className1 = 'reloadbotton'
+  function refreshPage() {
+    window.location.reload(false);
+  }
+  
+  
+  
   return (
     <div>
       <WordCard value = {word}/>
+      <button onClick={refreshPage} className = {className1}>reload!</button>
     </div>
   );
 
- /* function refreshPage() {
-    
-    window.location.reload(false);
 
-  }*/
-  
- /* return (
-    <div>
-      <button onClick={refreshPage}>Click to reload!</button>
-    </div>
-);*/
 }
 
 export default App;
