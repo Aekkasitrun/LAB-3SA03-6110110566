@@ -26,9 +26,11 @@ export default function WordCard(props){
 
         if(guess.length == state.word.length){
             if(guess == state.word){
-                console.log('yeah!')
+                console.log('YOU WIN !')
                 setState({...state, completed: true})
-                window.location.reload();
+                //window.location.reload();
+                
+             //<button onClick={refreshPage}>Click to reload!</button>
             }else{
                 console.log('reset, next attempt')
                 setState({...state,guess:'',attempt: state.attempt + 1})
